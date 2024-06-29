@@ -3,10 +3,10 @@ package com.robson.email_service.application;
 import com.robson.email_service.adapters.EmailSenderGateway;
 import com.robson.email_service.core.EmailSenderUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
-
-
+@Service
 public class EmailSenderService implements EmailSenderUseCase {
 
     private final EmailSenderGateway emailSenderGateway;
